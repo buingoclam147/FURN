@@ -119,38 +119,66 @@ body {
     padding: 0 25px;
     color: #000;
 }
-.check{
-    padding-bottom: 75px;
-    margin-bottom: 46px;
+.input input:focus{
+    outline: none;
 }
-.checkbox{
+/* check and checkbox */
+.check{
+    margin-bottom: 6rem;
+}
+.checkbox_1{
     float: left;
 }
-.checkbox input{
-    border: 0.1em solid #e4e4e4;
-    border-radius: 0.2em;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    padding-left: 0.2em;
-    padding-bottom: 0.3em;
-    margin-right: 10px;
-    vertical-align: bottom;
-    color: transparent;
-    transition: .2s;
+.checkbox_1 input[type="checkbox"] {
+    visibility: hidden;
 }
-.checkbox label{
+.checkbox_1 label {
+    cursor: pointer;
+    display: block;
     font-size: 17px;
     color: #140C40;
+    text-transform: capitalize;
     font-weight: 500;
     text-align: left;
 }
+.checkbox_1  input[type="checkbox"] + label:before {
+    border: 0.1em solid #e4e4e4;
+    border-radius: 0.2em;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 20px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 20px;
+}
+.checkbox_1 input[type="checkbox"]:checked + label:before {
+    background: var(--color-active);
+    color: white;
+    content: "\2713";
+    text-align: center;
+    border: none;
+    font-size: 20px;
+}
+.checkbox_1 input[type="checkbox"]:checked + label:after {
+    font-weight: bold;
+}
+
+.checkbox_1 input[type="checkbox"]:focus + label::before {
+      outline: rgb(59, 153, 252) auto 5px;
+}
+/* end checkbox */
 .forgot{
+    float: right;
+    margin-top: 1.2rem;
+}
+.forgot a{
     color: var(--color-active);
     font-size: 14px;
     font-weight: 400;
 }
-.forgot:hover{
+.forgot a:hover{
     color: var(--color-active);
 }
 .login{

@@ -773,7 +773,11 @@ body {
     border: none;
     width: 154px;
 }
-
+.search__shoping__mobile li> input:focus{
+    outline: none;
+    border: none;
+    background: none;
+}
 .searchicon__mobile {
     position: absolute;
     top: 53%;
