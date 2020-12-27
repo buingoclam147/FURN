@@ -774,6 +774,9 @@ body {
     .footer {
         left: 0;
     }
+    .foo{
+        margin-left: 1.5rem;
+    }
     /* footer */
     .logo__0{
         margin-bottom: 2rem;

@@ -210,6 +210,13 @@ body {
 .btn__login:hover{
     color: white;
 }
+@media only screen and (max-width: 767px) {
+    .check{
+        display: grid;
+        margin-bottom: 15px;
+    }
+}
+
 @media only screen and (max-width: 573.99px) {
     .content{
         width: 95%;
@@ -222,6 +229,7 @@ body {
     .check{
         margin-bottom: 10px;
         padding: 0;
+        display: grid;
     }
     .login{
         display: block;

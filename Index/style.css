@@ -23,8 +23,10 @@ body {
 .relative {
     position: relative;
 }
+
 /* loading */
-.loading{
+
+.loading {
     position: fixed;
     z-index: 1000000;
     overflow: hidden;
@@ -33,7 +35,8 @@ body {
     height: 100%;
     display: block;
 }
-.in__load{
+
+.in__load {
     position: relative;
     width: 125px;
     height: 125px;
@@ -41,26 +44,35 @@ body {
     top: 50%;
     left: 50%;
 }
-.loader{
-  border: 3px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 3px solid var(--color-active);
-  width: 125px;
-  height: 125px;
-  animation: spin 2s linear infinite;   
-  box-shadow: 0 0 57px 7px rgba(0, 0, 0, 0.1);
+
+.loader {
+    border: 1px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 1px solid var(--color-active);
+    width: 125px;
+    height: 125px;
+    animation: spin 2s linear infinite;
+    box-shadow: 0 0 57px 7px rgba(0, 0, 0, 0.1);
 }
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-.img__load img{
-    position: absolute; 
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.img__load img {
+    position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
 }
+
 /* end loading */
+
 /* navbar*/
 
 .navbar {
@@ -306,6 +318,7 @@ body {
     margin-bottom: 25px;
     padding-right: 49px;
 }
+
 .butt {
     position: relative;
 }
@@ -326,6 +339,7 @@ body {
     border-radius: 0;
     text-decoration: none;
 }
+
 /*popular*/
 
 .popular {
@@ -521,8 +535,31 @@ body {
     width: 50%;
     height: 100%;
     float: left;
+    position: relative;
 }
-
+.inspired__img1 i{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 44%;
+    color: #fff;
+    font-size: 45px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.inspired__img1:hover{
+    visibility: visible;
+    filter: brightness(75%);
+}
+.inspired__img1:hover i{
+    top: 48%;
+    opacity: 1;
+    visibility: visible;
+}
 .inspired__img2 {
     background-image: url(./images/inspired2.png);
     background-position: center;
@@ -530,7 +567,30 @@ body {
     width: 50%;
     height: 100%;
     float: right;
+    position: relative;
 }
+.inspired__img2:hover{
+    visibility: visible;
+    filter: brightness(75%);
+}
+.inspired__img2 i{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 44%;
+    color: #fff;
+    font-size: 45px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.inspired__img2:hover i{
+    top: 48%;
+    opacity: 1;
+    visibility: visible;}
 
 /* suggest product */
 
@@ -688,10 +748,13 @@ body {
     padding-top: 4rem;
     text-align: center;
 }
-.end{font-size: 13px;
+
+.end {
+    font-size: 13px;
     color: #C2C5DB;
     text-align: center;
 }
+
 /* button up */
 
 .pushup {
@@ -773,11 +836,13 @@ body {
     border: none;
     width: 154px;
 }
-.search__shoping__mobile li> input:focus{
+
+.search__shoping__mobile li>input:focus {
     outline: none;
     border: none;
     background: none;
 }
+
 .searchicon__mobile {
     position: absolute;
     top: 53%;
@@ -820,21 +885,27 @@ body {
     left: 17px;
     bottom: -6px;
 }
+
 /* active */
-.active >a{
+
+.active>a {
     color: #FD8F5F !important;
     background-color: #fff;
     border-bottom: 2px solid #FD8F5F;
     z-index: 9;
     position: relative;
 }
+
 /* media */
+
 /* xl */
-@media only screen and (min-width:992px){
-    .search_0{
+
+@media only screen and (min-width:992px) {
+    .search_0 {
         display: block !important;
     }
-    }
+}
+
 /* sm */
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
@@ -920,7 +991,7 @@ body {
         left: 0.9rem;
     }
     .content-1 {
-        width: 48.9%;
+        width: 28.3rem;
         padding: 2.4rem 3rem 2.7rem 3.6rem;
         top: 9%;
         left: 10%;
@@ -941,7 +1012,7 @@ body {
     .content-1 div {
         padding: 0;
     }
-    .poppular{
+    .poppular {
         padding: 7% 7% 2% 7%;
     }
     .butt a {
@@ -980,7 +1051,7 @@ body {
     .get__inspired {
         height: 900px;
     }
-    .inspired__img{
+    .inspired__img {
         padding: 0;
     }
     .inspired__img1 {
@@ -998,13 +1069,13 @@ body {
     .foo {
         margin: 0;
     }
-    .advantages >div{       
-    padding-bottom: 16px;
+    .advantages>div {
+        padding-bottom: 16px;
     }
 }
 
 @media only screen and (max-width: 573.99px) {
-    .content{
+    .content {
         padding: 0;
     }
     .ulnavbar-1 {
@@ -1083,7 +1154,7 @@ body {
         width: 100%;
         padding: 50px 36px;
     }
-    .poppular p{
+    .poppular p {
         max-width: 95%;
     }
     .blog__content h1 {
@@ -1091,7 +1162,7 @@ body {
     }
     .btn__large {
         width: 230px;
-    height: 60px;
+        height: 60px;
     }
     .new-blog {
         height: 920px;
@@ -1099,39 +1170,39 @@ body {
     .blog__content>div {
         padding: 0;
     }
-    .inspired{
-        padding: 5% 3% 0 1%;   
-        margin-bottom: 40px; 
+    .inspired {
+        padding: 5% 3% 0 1%;
+        margin-bottom: 40px;
     }
-    .inspired h2{
+    .inspired h2 {
         font-size: 28px;
     }
-    .inspired__img{
+    .inspired__img {
         padding: 0 3.7% 0 1.6%;
     }
-    .inspired__img1{
+    .inspired__img1 {
         width: 100%;
         height: 496px;
     }
-    .get__inspired{
+    .get__inspired {
         height: 1350px;
     }
-    .inspired__img2{
+    .inspired__img2 {
         width: 100%;
     }
-    .poppular__1 h2{
+    .poppular__1 h2 {
         font-size: 28px;
     }
-    .poppular__1 p{
+    .poppular__1 p {
         width: 95%;
     }
-    .advantages >div{
+    .advantages>div {
         margin-bottom: 2rem;
     }
-    .foo{
+    .foo {
         margin: 2rem 2rem 0;
     }
-    .foo ul{
+    .foo ul {
         height: 106px;
     }
 }
