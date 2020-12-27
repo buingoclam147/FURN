@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | eCommerce</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading" id="stopLoad" onload="load()">
+        <div class="in__load">
+            <div class="loader"></div>
+            <div class="img__load">
+                <img src="./images/load.png" alt="imgload">
+            </div>
+        </div>
+    </div>
+    <!--end loading -->
+    <!--navbar-->
+    <div class="container-fluid" id="myNavbar">
+        <div class="row navbar " id="inNavbar">
+            <!--logo and dropdow-->
+            <div class="col-md-6 align-items-center d-flex ">
+                <div>
+                    <a href="#" class="logonavbar__1" id="logonavbar">
+                        <img src="./images/logonavbar.png" alt="logo"></a>
+                    <a href="#" class="logonavbar__2">
+                        <img src="./images/logonavbar2.png" alt="logo2">
+                    </a>
+                </div>
+                <ul class="ulnavbar-1 align-items-center d-flex ">
+                    <li class="pink"><a href="../Index/index.html">Home</a></li>
+                    <li class="pink"><a href="#">Product</a></li>
+                    <li class="pink"><a href="../About Us/AboutUs.html">About</a></li>
+                    <!-- dropdowns-->
+                    <li class="on relative pink">
+                        <a href="#">Page</a>
+                        <ul class="dropmenu">
+                            <li><a href="../login/login.html">Login</a></li>
+                            <li><a href="#">Card</a></li>
+                            <li><a href="#">Categories</a></li>
+                            <li><a href="#">Checkout</a></li>
+                            <li><a href="#">Product Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="on relative pink"><a href="#">Blog</a>
+                        <ul class="dropmenu">
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Blog Details</a></li>
+                            <li><a href="#">Elements</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="pink"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--search and my account-->
+            <div class="col-md-6 search_0" id="navbar__mobile">
+                <ul class="d-flex align-items-center ulnavbar-2" id="myAccount">
+                    <li class="search">
+                        <input type="text" name="search" placeholder="Search products">
+                        <div class="searchicon">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </li>
+                    <li class="pink">
+                        <a href="#" class="btn myaccount">My Account
+                        </a>
+                    </li>
+                    <li class="shopping-bag">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span>0</span>
+                    </li>
+                    <li class="navbar__mobile">
+                        <i class='bx bx-menu' onclick="dr_menu()"></i>
+                        <ul class="ulnavbar__mobile" id="block_none">
+                            <li><a href="../Index/index.html">Home</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="../About Us/AboutUs.html">About</a></li>
+                            <!-- dropdowns-->
+                            <li onclick="pages()">
+                                <a href="#">Page <span>+</span></a>
+                                <ul class="d__n" id="page">
+                                    <li><a href="../login/login.html">Login</a></li>
+                                    <li><a href="#">Card</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                    <li><a href="#">Checkout</a></li>
+                                    <li><a href="#">Product Details</a></li>
+                                </ul>
+                            </li>
+                            <li onclick="blogs()"><a href="#">Blog <span>+</span></a>
+                                <ul class="d__n" id="blog">
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Blog Details</a></li>
+                                    <li><a href="#">Elements</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end navbar -->
+    <!--content-->
+    <!-- search and my account and shopping-bang mobile -->
+    <ul class="search__shoping__mobile position-absolute">
+        <li class="d-flex">
+            <input type="text" name="search" placeholder="Search products">
+            <div class="searchicon__mobile">
+                <i class='bx bx-search'></i>
+            </div>
+        </li>
+        <li class="pink__mobile">
+            <a href="#" class="btn myaccount__mobile">My Account
+            </a>
+        </li>
+        <li class="shopping-bag__mobile">
+            <i class='bx bx-shopping-bag'></i>
+            <span>0</span>
+        </li>
+    </ul>
+    <div class="container-fluid content">
+        <!--out-->
+        <div class="row main">
+            <!--in-1-->
+            <div class="thefirst">
+                <div class="backgroundcolor">
+                </div>
+                <div class="background-1">
+                </div>
+                <div class="content-1">
+                    <h1>Contact Us</h1>
+                    <ol class="d-flex">
+                        <li><a href="../Index/index.html">Home</a></li>
+                        <li>></li>
+                        <li><a href="#">Contact</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end the first -->
+    <!-- map -->
+    <div class="container-fluid max__width">
+        <div class="row">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.6649661875645!2d106.72915221472675!3d10.836930892280506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527d1644e1ecf%3A0xc1404d47bfdf55a8!2zNDQ1IMSQLiBLaGEgVuG6oW4gQ8OibiwgSGnhu4dwIELDrG5oIENow6FuaCwgVGjhu6cgxJDhu6ljLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1608565402796!5m2!1sen!2s"
+                    width="100%" height="495px " frameborder="0" style="border:0;" allowfullscreen=""
+                    aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="row">
+            <div class="col-12">
+                <h2 class="contact__main">Get in Touch</h2>
+            </div>
+            <div class="col-lg-8">
+                <div class="form_input row">
+                    <div class="col-12 e__message">
+                        <input type="text" placeholder="Enter Message">
+                    </div>
+                    <div class="col-sm-6 chung">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="col-sm-6 chung">
+                        <input type="email" placeholder="Enter email address">
+                    </div>
+                    <div class="col-sm-12 chung">
+                        <input type="email" placeholder="Enter subject">
+                    </div>
+                    <div class="btn-group btn__send">
+                        <button type="button" class="btn ">SEND</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1 info">
+                <div class="d-flex mb-5">
+                    <i class='bx bx-home'></i>
+                    <div>
+                        <h3>HCM, VIETNAM</h3>
+                        <p>445,Khavancan,ThuDuc</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-5">
+                    <i class='bx bx-mobile-alt'></i>
+                    <div>
+                        <h3>+0867655051</h3>
+                        <p>Mon to Fri 9am to 6pm</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-5">
+                    <i class='bx bx-envelope'></i>
+                    <div>
+                        <h3>Buingoclam00@gmail.com.vn</h3>
+                        <p>Send us your query anytime!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end content -->
+    <!-- footer -->
+    <div class="bgr">
+        <div class="footer relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8 logo__0">
+                        <a href="../Index/index.html" class="logo__footer">
+                            <img src="./images/logonavbar2.png" alt="logo">
+                        </a>
+                        <div class="info__1">
+                            <p>Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+                                ornare,
+                                eros dolor interdum nulla.</p>
+                        </div>
+                        <div class="iconinfo">
+                            <a href="#">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="#">
+                                <i class='bx bxl-pinterest-alt'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 m-auto d-flex">
+                        <div class="foo">
+                            <h4>Quick links</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="../Contact/contact.html">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Primacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-8 col-sm-4 m-auto d-flex">
+                        <div class="foo">
+                            <h4>Shop Category</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Shop by type</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop by material</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shop by style</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 m-auto d-flex">
+                        <div class="foo">
+                            <h4>Pertners</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Image Licensin</a>
+                                </li>
+                                <li>
+                                    <a href="#">Style Guide</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 d-flex">
+                    <div class="row  m-auto">
+                        <p class="end">Copyright ©2020 All rights reserved | This template is made with <i
+                                class='bx bxs-heart' style=" color: var(--color-active);"></i> by <b
+                                style=" color: var(--color-active);">BNL</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end footer -->
+        <!-- booton up -->
+        <div class="pushup" id="btnUp">
+            <a href="#">
+                <i class='bx bxs-chevrons-up'></i>
+            </a>
+        </div>
+</body>
+<script>
+    /*loading*/
+    window.onload = function(){ load() }
+    var stopLoad = document.getElementById('stopLoad');
+    function load(){
+        setTimeout(function(){ stopLoad.style.display = 'none'; }, 500);
+    }
+    /* end loading*/
+    /* an hien thanh navbar */
+    window.onscroll = function () { navbar(), pushUp() }
+    function navbar() {
+        var nav_mobile = document.getElementById("navbar__mobile")
+        var nav = document.getElementById("myNavbar");
+        var account = document.getElementById("myAccount");
+        var logo = document.getElementById("logonavbar");
+        var navbar = document.getElementById("inNavbar")
+        if (document.documentElement.scrollTop > 350) {
+            nav.style.position = "fixed";
+            nav.style.zIndex = "1000";
+            account.classList.add("mx-4");
+            logo.style.display = "none";
+            navbar.style.padding = "0 0 0 4rem";
+            nav_mobile.style.display = "none";
+        }
+        else {
+            account.classList.remove("mx-4");
+            nav.style.position = "relative";
+            logo.style.display = "block";
+            navbar.style.padding = "0 0 0 8rem";
+            nav_mobile.style.display = "block";
+        }
+    };
+    function pushUp() {
+        var btnUp = document.getElementById("btnUp");
+        if (document.documentElement.scrollTop > 700) {
+            btnUp.style.display = "block";
+        }
+        else {
+            btnUp.style.display = "none";
+        }
+    };
+    /* anh hoac hien dropdown menu mobile */
+    var isShow = false;
+    var bn = document.getElementById("block_none");
+    function dr_menu() {
+        if (isShow == false) {
+            bn.classList.add("d-block");
+            isShow = true;
+        }
+        else {
+            bn.classList.remove("d-block");
+            isShow = false;
+        }
+    }
+    var blo = false;
+    var blog = document.getElementById("blog");
+    function blogs() {
+        if (blo == false) {
+            blog.classList.add("d-block");
+            blo = true;
+        }
+        else {
+            blog.classList.remove("d-block");
+            blo = false;
+        }
+    }
+    var pag = false;
+    var page = document.getElementById("page");
+    function pages() {
+        if (pag == false) {
+            page.classList.add("d-block");
+            pag = true;
+        }
+        else {
+            page.classList.remove("d-block");
+            pag = false;
+        }
+    }
+</script>
+
+</html>
