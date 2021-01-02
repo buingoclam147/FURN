@@ -743,7 +743,7 @@ body {
     /* search__shoping__mobile */
     .search__shoping__mobile {
         display: flex;
-        z-index: 1000;
+        z-index: 999;
     }
     /* content of thefirst */
     .content {
@@ -756,6 +756,7 @@ body {
     .background-1 {
         width: 100%;
         min-height: 776px;
+        background-position-y: 26rem;
     }
     /* map */
     .map {
